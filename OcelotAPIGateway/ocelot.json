@@ -1,0 +1,68 @@
+﻿{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7106/"
+  },
+  "Routes": [
+    
+    {
+      "UpstreamPathTemplate": "/gateway/Add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Catalog/Add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4201
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Catalog/Edit",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Catalog/Edit",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4201
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Delete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Catalog/Delete",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4201
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/GetCatalog",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Catalog​/GetCatalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4201
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/GetCatalogList",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api​/Catalog​/GetCatalogList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4201
+        }
+      ]
+    }
+  ]
+}
